@@ -1,0 +1,11 @@
+<!--
+Call api get regular course list
+Call api get custom course list
+-->
+Regular course:
+<button>Regular Course</button>
+
+Custom course:
+@for(customCourse of state.customCourses(); track customCourse.id) {
+  <button routerLink="review">{{ customCourse.name  }}</button>
+}
