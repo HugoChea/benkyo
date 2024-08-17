@@ -7,5 +7,5 @@ Regular course:
 
 Custom course:
 @for(customCourse of state.customCourses(); track customCourse.id) {
-  <button routerLink="review">{{ customCourse.name  }}</button>
+  <button (click)="goReview(customCourse.id)">{{ customCourse.name  }}</button>
 }

@@ -1,3 +1,9 @@
 <p>deck-review works!</p>
 
-<input type="text" id="wanakana-input" />
+
+<div>Sujet</div>
+<div>{{ state.questions()[state.currentQuestion()].subject }}</div>
+<div>Question</div>
+<div>{{ state.questions()[state.currentQuestion()].name }}</div>
+
+<app-hiragana-input (submittedValue)="state.checkAnswer($event)"></app-hiragana-input>

@@ -3,9 +3,7 @@ import { KanjiHttpService } from './kanji-http.service';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { UserCourse } from 'app/core/models/kanji.models';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class KanjiStateService {
 
   kanjiHttp = inject(KanjiHttpService);

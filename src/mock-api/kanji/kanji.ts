@@ -28,7 +28,7 @@ export const getReviewByDeckId = {
       userId: '1',
       card: {
         id: '1',
-        sujet: '仕',
+        subject: '仕',
         level: 1,
         description: [
           {

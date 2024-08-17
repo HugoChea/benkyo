@@ -8,7 +8,7 @@ export interface Deck {
 
 export interface Card {
   id: string,
-  sujet: string,
+  subject: string,
   level: number,
   description: CardDescription[],
   questions: CardQuestion[]
@@ -36,6 +36,13 @@ export interface Review {
   nextReviewDate: string,
 }
 
+export interface ReviewQuestion {
+  cardId: string,
+  subject: string,
+  name: string,
+  answer: string,
+  status: boolean | undefined
+}
 
 export interface ReviewResponse {
   reviews: Review[]
